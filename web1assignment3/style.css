@@ -1,0 +1,571 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif !important;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+p,
+a,
+button,
+input,
+li {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+h1,
+h2,
+h3 {
+    color: #1f3c88;
+    font-family: Arial, sans-serif !important;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CUSTOM NAVBAR
+   Used on Home, Task 0, Task 1
+========================= */
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background-color: #dbeafe;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f3c88;
+}
+
+.main-navbar nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #1f3c88;
+    font-weight: bold;
+}
+
+.main-navbar a:hover {
+    color: #e11d48;
+}
+
+
+/* =========================
+   BOOTSTRAP NAVBAR
+   Used on Task 3 and Task 4
+========================= */
+
+.navbar {
+    background-color: #dbeafe !important;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #1f3c88 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 24px;
+    font-weight: bold !important;
+}
+
+.navbar .nav-link {
+    color: #1f3c88 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 16px;
+    font-weight: bold !important;
+    margin-left: 10px;
+}
+
+.navbar .nav-link:hover {
+    color: #e11d48 !important;
+}
+
+.navbar-toggler {
+    border: 1px solid #1f3c88;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home-page {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.home-page h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.home-page h2 {
+    font-size: 28px;
+}
+
+.home-page p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.home-buttons a {
+    padding: 12px 20px;
+
+    background-color: #1f3c88;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.home-buttons a:hover {
+    background-color: #e11d48;
+}
+
+
+/* =========================
+   GENERAL TASK PAGE
+========================= */
+
+.task-page {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.task-page > h1 {
+    margin-bottom: 20px;
+}
+
+.task-page > p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TASK 0
+   RESPONSIVE TYPOGRAPHY
+========================= */
+
+.typography-page h1 {
+    font-size: 40px;
+}
+
+.typography-page h2 {
+    font-size: 28px;
+}
+
+.typography-page p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TASK 1
+   RESPONSIVE LAYOUT
+========================= */
+
+.responsive-boxes {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.responsive-box {
+    flex: 1;
+
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-box h2 {
+    margin-top: 0;
+}
+
+.responsive-box p {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   TASK 2
+   BOOTSTRAP GRID
+========================= */
+
+.bootstrap-box {
+    min-height: 220px;
+
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bootstrap-box h2 {
+    margin-bottom: 15px;
+}
+
+.bootstrap-box p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   TASK 3
+   BOOTSTRAP NAVBAR DEMO
+========================= */
+
+.navbar-demo {
+    max-width: 700px;
+
+    margin: 50px auto;
+    padding: 40px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-demo h2 {
+    margin-top: 0;
+}
+
+
+/* =========================
+   TASK 4
+   PORTFOLIO
+========================= */
+
+.portfolio-page {
+    padding: 50px 0;
+}
+
+.portfolio-projects {
+    padding: 30px;
+
+    background-color: #f8fafc;
+    border-radius: 10px;
+}
+
+.portfolio-projects > h1 {
+    margin-top: 0;
+}
+
+.portfolio-card {
+    height: 100%;
+
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card h2 {
+    font-size: 22px;
+}
+
+.portfolio-card p {
+    flex: 1;
+    line-height: 1.5;
+}
+
+.portfolio-card button {
+    padding: 10px 15px;
+
+    background-color: #1f3c88;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.portfolio-card button:hover {
+    background-color: #e11d48;
+}
+
+.portfolio-sidebar {
+    height: 100%;
+
+    padding: 30px;
+
+    background-color: #eef2ff;
+    border-radius: 10px;
+}
+
+.portfolio-sidebar li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: auto;
+
+    padding: 20px;
+
+    background-color: #dbeafe;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   TABLET
+   768px - 991px
+========================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Typography */
+
+    .typography-page h1 {
+        font-size: 36px;
+    }
+
+    .typography-page h2 {
+        font-size: 25px;
+    }
+
+    .typography-page p {
+        font-size: 17px;
+    }
+
+
+    /* Task 1 */
+
+    .responsive-boxes {
+        flex-wrap: wrap;
+    }
+
+    .responsive-box {
+        flex: 0 0 calc(50% - 13px);
+    }
+
+    .responsive-box:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Home */
+
+    .home-page h1 {
+        font-size: 36px;
+    }
+
+    .home-page h2 {
+        font-size: 25px;
+    }
+
+    .home-page p {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   max 767px
+========================= */
+
+@media (max-width: 767px) {
+
+    /* Custom navbar */
+
+    .main-navbar {
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .main-navbar nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .main-navbar a {
+        font-size: 14px;
+    }
+
+
+    /* Bootstrap navbar */
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .navbar .nav-link {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+
+    /* Home */
+
+    .home-page {
+        padding: 50px 20px;
+    }
+
+    .home-page h1 {
+        font-size: 30px;
+    }
+
+    .home-page h2 {
+        font-size: 22px;
+    }
+
+    .home-page p {
+        font-size: 15px;
+    }
+
+
+    /* General task page */
+
+    .task-page {
+        padding: 40px 20px;
+    }
+
+    .task-page > h1 {
+        font-size: 28px;
+    }
+
+    .task-page > p {
+        font-size: 15px;
+    }
+
+
+    /* Task 0 */
+
+    .typography-page h1 {
+        font-size: 28px;
+    }
+
+    .typography-page h2 {
+        font-size: 21px;
+    }
+
+    .typography-page p {
+        font-size: 15px;
+    }
+
+
+    /* Task 1 */
+
+    .responsive-boxes {
+        flex-direction: column;
+    }
+
+    .responsive-box {
+        width: 100%;
+    }
+
+
+    /* Task 3 */
+
+    .navbar-demo {
+        margin: 30px auto;
+        padding: 25px 20px;
+    }
+
+
+    /* Task 4 */
+
+    .portfolio-page {
+        padding: 30px 0;
+    }
+
+    .portfolio-projects {
+        padding: 20px;
+    }
+
+    .portfolio-sidebar {
+        padding: 20px;
+    }
+
+    .portfolio-projects h1 {
+        font-size: 28px;
+    }
+
+    .portfolio-card h2 {
+        font-size: 20px;
+    }
+
+    .portfolio-card p {
+        font-size: 14px;
+    }
+}
