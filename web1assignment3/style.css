@@ -1,7 +1,3 @@
-/* =========================
-   GENERAL
-========================= */
-
 * {
     box-sizing: border-box;
 }
@@ -43,12 +39,6 @@ h3 {
     font-weight: bold;
 }
 
-
-/* =========================
-   CUSTOM NAVBAR
-   Used on Home, Task 0, Task 1
-========================= */
-
 .main-navbar {
     display: flex;
     justify-content: space-between;
@@ -81,12 +71,6 @@ h3 {
     color: #e11d48;
 }
 
-
-/* =========================
-   BOOTSTRAP NAVBAR
-   Used on Task 3 and Task 4
-========================= */
-
 .navbar {
     background-color: #dbeafe !important;
     padding: 15px 0;
@@ -118,11 +102,6 @@ h3 {
 .navbar-toggler:focus {
     box-shadow: none;
 }
-
-
-/* =========================
-   HOME
-========================= */
 
 .home-page {
     text-align: center;
@@ -165,11 +144,6 @@ h3 {
     background-color: #e11d48;
 }
 
-
-/* =========================
-   GENERAL TASK PAGE
-========================= */
-
 .task-page {
     padding: 50px 40px;
     text-align: center;
@@ -184,12 +158,6 @@ h3 {
     line-height: 1.6;
 }
 
-
-/* =========================
-   TASK 0
-   RESPONSIVE TYPOGRAPHY
-========================= */
-
 .typography-page h1 {
     font-size: 40px;
 }
@@ -202,12 +170,6 @@ h3 {
     font-size: 18px;
     line-height: 1.6;
 }
-
-
-/* =========================
-   TASK 1
-   RESPONSIVE LAYOUT
-========================= */
 
 .responsive-boxes {
     display: flex;
@@ -234,12 +196,6 @@ h3 {
     line-height: 1.5;
 }
 
-
-/* =========================
-   TASK 2
-   BOOTSTRAP GRID
-========================= */
-
 .bootstrap-box {
     min-height: 220px;
 
@@ -264,12 +220,6 @@ h3 {
     margin-bottom: 0;
 }
 
-
-/* =========================
-   TASK 3
-   BOOTSTRAP NAVBAR DEMO
-========================= */
-
 .navbar-demo {
     max-width: 700px;
 
@@ -285,12 +235,6 @@ h3 {
 .navbar-demo h2 {
     margin-top: 0;
 }
-
-
-/* =========================
-   TASK 4
-   PORTFOLIO
-========================= */
 
 .portfolio-page {
     padding: 50px 0;
@@ -359,11 +303,6 @@ h3 {
     margin-bottom: 8px;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
 footer {
     margin-top: auto;
 
@@ -378,15 +317,7 @@ footer p {
     margin: 0;
 }
 
-
-/* =========================
-   TABLET
-   768px - 991px
-========================= */
-
 @media (min-width: 768px) and (max-width: 991px) {
-
-    /* Typography */
 
     .typography-page h1 {
         font-size: 36px;
@@ -399,9 +330,6 @@ footer p {
     .typography-page p {
         font-size: 17px;
     }
-
-
-    /* Task 1 */
 
     .responsive-boxes {
         flex-wrap: wrap;
@@ -416,9 +344,6 @@ footer p {
         margin-right: auto;
     }
 
-
-    /* Home */
-
     .home-page h1 {
         font-size: 36px;
     }
@@ -432,15 +357,7 @@ footer p {
     }
 }
 
-
-/* =========================
-   MOBILE
-   max 767px
-========================= */
-
 @media (max-width: 767px) {
-
-    /* Custom navbar */
 
     .main-navbar {
         flex-direction: column;
@@ -458,9 +375,6 @@ footer p {
         font-size: 14px;
     }
 
-
-    /* Bootstrap navbar */
-
     .navbar {
         padding: 12px 0;
     }
@@ -473,9 +387,6 @@ footer p {
         margin-left: 0;
         padding-left: 0;
     }
-
-
-    /* Home */
 
     .home-page {
         padding: 50px 20px;
@@ -493,9 +404,6 @@ footer p {
         font-size: 15px;
     }
 
-
-    /* General task page */
-
     .task-page {
         padding: 40px 20px;
     }
@@ -507,9 +415,6 @@ footer p {
     .task-page > p {
         font-size: 15px;
     }
-
-
-    /* Task 0 */
 
     .typography-page h1 {
         font-size: 28px;
@@ -523,9 +428,6 @@ footer p {
         font-size: 15px;
     }
 
-
-    /* Task 1 */
-
     .responsive-boxes {
         flex-direction: column;
     }
@@ -534,16 +436,10 @@ footer p {
         width: 100%;
     }
 
-
-    /* Task 3 */
-
     .navbar-demo {
         margin: 30px auto;
         padding: 25px 20px;
     }
-
-
-    /* Task 4 */
 
     .portfolio-page {
         padding: 30px 0;
